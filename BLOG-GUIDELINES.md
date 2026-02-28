@@ -130,3 +130,22 @@ tags: [tag1, tag2, tag3]
 ---
 
 *Ce document est vivant. Il évolue avec le blog.*
+
+## Cadence de publication
+
+- **Cible:** 1 billet par jour (EN + FR) tant que la veille fournit du matériel
+- **Heure:** Fin de journée (~16h-17h EST) — après que la veille ait accumulé les signaux
+- **Source:** Veille des squads, leçons opérationnelles, actualité AI
+- **Backlog sujets en banque:** Maintenir une liste dans ce fichier (section ci-dessous)
+
+## 📋 Backlog sujets
+
+| Sujet | Source veille | Priorité | Statut |
+|-------|--------------|----------|--------|
+| ClawJacked — sécurité des systèmes agentiques | #megaman 28 fév | 🔴 | À rédiger |
+| L'inflexion de décembre 2025 (Karpathy + Anthropic spec→deploy) | #thematrix + #starfleet 28 fév | 🔴 | À rédiger |
+| Pentagon vs Anthropic — résilience multi-modèle | #thematrix + #starfleet 28 fév | 🟡 | À rédiger |
+| AI Bubble thesis — positionnement pragmatique | #starfleet 28 fév | 🟡 | À rédiger |
+| Claude Cowork marketplace — opportunité service PME | #starfleet 28 fév | 🟡 | À rédiger |
+| Wolfram Foundation Tool — calcul fiable pour agents | #thematrix 28 fév | 🔵 | À rédiger |
+| AgentRelay eval — pourquoi on garde notre orchestration | #thematrix 28 fév | 🔵 | À rédiger |
