@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Le Pattern Logicien : pourquoi vos agents IA ont besoin d'une couche de validation"
-date: 2026-02-28
+date: 2026-02-28T16:00:00
 description: "La plupart des tutoriels d'agents IA sont juste des chaînes de prompts. Les vrais systèmes de production ont besoin de validation déterministe."
 lang: fr
 tags: [architecture, agents, patterns, confiance]

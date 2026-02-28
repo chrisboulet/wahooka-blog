@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "The Logician Pattern: Why Your AI Agents Need a Validation Layer"
-date: 2026-02-28
+date: 2026-02-28T16:00:00
 description: "Most AI agent tutorials are just prompt chains. Real production systems need deterministic validation. Here's the pattern that makes agents trustworthy."
 lang: en
 tags: [architecture, agents, patterns, trust]
