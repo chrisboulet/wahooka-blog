@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Quelque chose a changé en décembre 2025"
-date: 2026-02-28
+date: 2026-02-28T17:00:00
 description: "Andrej Karpathy a dit que la programmation a changé en deux mois. Un ingénieur a écrit un spec vendredi. Lundi matin, c'était en prod. Voici ce qui s'est vraiment passé."
 lang: fr
 tags: [agentic-ai, inflection-point, multi-agent, protocol-42]

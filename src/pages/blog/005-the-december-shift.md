@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Something Shifted in December 2025"
-date: 2026-02-28
+date: 2026-02-28T17:00:00
 description: "Andrej Karpathy said programming changed in the last two months. An Anthropic engineer proved it by not working all weekend. Here's what actually happened."
 lang: en
 tags: [agentic-ai, inflection-point, multi-agent, protocol-42]
