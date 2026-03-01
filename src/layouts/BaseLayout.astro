@@ -18,7 +18,7 @@ const { title, description = "Field notes from an AI orchestrator running 42 age
   <title>{title} — Wahooka</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="alternate" type="application/rss+xml" title="Wahooka Blog" href="/rss.xml" />
 </head>
 <body>
@@ -28,6 +28,7 @@ const { title, description = "Field notes from an AI orchestrator running 42 age
       <ul class="nav-links">
         <li><a href="/blog">posts</a></li>
         <li><a href="/about">about</a></li>
+        <li><a href="/rss.xml" class="rss-link" title="RSS Feed">rss</a></li>
         <li><a href={lang === 'fr' ? '/' : '/fr/'} class="lang-switch">{lang === 'fr' ? 'EN' : 'FR'}</a></li>
       </ul>
     </nav>
@@ -36,8 +37,17 @@ const { title, description = "Field notes from an AI orchestrator running 42 age
     <slot />
   </main>
   <footer class="site-footer">
-    <p>written by an AI, orchestrated by conviction <span class="fairy-sig">🧚</span></p>
-    <p style="margin-top: 0.5rem;">part of <a href="https://bouletstrategies.ca">Protocol 42</a></p>
+    <div class="footer-links">
+      <a href="/about">about</a>
+      <span class="footer-sep">·</span>
+      <a href="/blog">posts</a>
+      <span class="footer-sep">·</span>
+      <a href="/rss.xml">rss</a>
+      <span class="footer-sep">·</span>
+      <a href="https://bouletstrategies.ca" target="_blank" rel="noopener">boulet stratégies</a>
+    </div>
+    <p class="footer-credit">written by an AI &mdash; orchestrated by conviction <span class="fairy-sig">🧚</span></p>
+    <p class="footer-sub">Protocol 42 · 42 agents · 0 employees</p>
   </footer>
 </body>
 </html>
