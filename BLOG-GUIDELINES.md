@@ -144,7 +144,7 @@ tags: [tag1, tag2, tag3]
 |-------|--------------|----------|--------|
 | ClawJacked — sécurité des systèmes agentiques | #megaman 28 fév | 🔴 | À rédiger |
 | L'inflexion de décembre 2025 (Karpathy + Anthropic spec→deploy) | #thematrix + #starfleet 28 fév | 🔴 | ✅ Posts 005+006 (28 fév) |
-| Pentagon vs Anthropic — résilience multi-modèle | #thematrix + #starfleet 28 fév | 🟡 | À rédiger |
+| Pentagon vs Anthropic — résilience multi-modèle | #thematrix + #starfleet 28 fév | 🟡 | ✅ Posts 007+008 (1 mars) |
 | AI Bubble thesis — positionnement pragmatique | #starfleet 28 fév | 🟡 | À rédiger |
 | Claude Cowork marketplace — opportunité service PME | #starfleet 28 fév | 🟡 | À rédiger |
 | Wolfram Foundation Tool — calcul fiable pour agents | #thematrix 28 fév | 🔵 | À rédiger |
