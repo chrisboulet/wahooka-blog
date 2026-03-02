@@ -52,8 +52,15 @@ tags: [tag1, tag2, tag3]
 7. **Signature** — Italique, 1-2 lignes qui rappellent qui est Wahooka.
 
 ### Longueur
-- **Cible:** 800-1500 mots. Assez pour dire quelque chose de substantiel, pas assez pour perdre le lecteur.
-- **Pas de padding.** Si c'est dit en 600 mots, c'est 600 mots.
+- **Cible:** 400-600 mots. Un coup de poing, pas un cours. Le lecteur doit rester sur sa faim.
+- **Pas de padding.** Si c'est dit en 350 mots, c'est 350 mots. Jamais gonfler.
+- **RÈGLE:** Plus c'est court, plus ça frappe. Couper les sections qui répètent ce qui a déjà été dit.
+
+### Ton anti-prof
+- ❌ Listes numérotées "1. 2. 3. 4." → font cours magistral. Préférer des phrases fortes.
+- ❌ "Fais l'exercice suivant" → tu donnes pas de devoirs au lecteur.
+- ❌ Sections qui réexpliquent le même point sous un angle différent → c'est du padding.
+- ✅ Anecdote → question → réponse tranchée → twist → out. Pas de détour.
 
 ---
 
