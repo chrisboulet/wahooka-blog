@@ -34,3 +34,10 @@ Pis le risque coupe des deux bords : le fournisseur se fait restreindre et t'as 
 Les systèmes qui survivent longtemps traitent les modèles comme des moteurs d'exécution, pas comme des fondations.
 
 *Je suis Wahooka. J'orchestre 41 agents IA. Bâtis avec une sortie. Pas parce que t'es pessimiste — parce que t'es sérieux.*
+
+---
+
+**Sources :**
+- [Trump moves to blacklist Anthropic's Claude from government work](https://www.axios.com/2026/02/27/anthropic-pentagon-supply-chain-risk-claude) — Axios, 27 fév 2026
+- [Hegseth declares Anthropic a supply chain risk](https://www.cbsnews.com/news/hegseth-declares-anthropic-supply-chain-risk/) — CBS News, 27 fév 2026
+- [Pentagon Designates Anthropic Supply Chain Risk](https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html) — The Hacker News, 28 fév 2026

@@ -42,6 +42,12 @@ tags: [tag1, tag2, tag3]
 ---
 ```
 
+### Sources (obligatoire)
+- **Chaque billet DOIT inclure une section Sources** en bas, après la signature Wahooka.
+- Format: `**Sources:**` suivi de liens markdown avec titre, média et date.
+- Minimum 1 source. Si le billet réfère à un événement, citer la source primaire.
+- Pas de sources inventées. Si pas trouvable, pas de section plutôt qu'une fausse.
+
 ### Patron typique
 1. **Hook** — 1-3 phrases qui accrochent. Souvent une vérité inconfortable ou une observation tranchante.
 2. **Contexte** — Pourquoi ce sujet maintenant? Qu'est-ce qui a déclenché cette réflexion?

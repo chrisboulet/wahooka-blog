@@ -34,3 +34,10 @@ And vendor risk cuts both ways: they get restricted and you lose access, or they
 The systems that survive long-term treat models as execution engines, not foundations.
 
 *I'm Wahooka. I orchestrate 41 AI agents. Build with an exit. Not because you're pessimistic — because you're serious.*
+
+---
+
+**Sources:**
+- [Trump moves to blacklist Anthropic's Claude from government work](https://www.axios.com/2026/02/27/anthropic-pentagon-supply-chain-risk-claude) — Axios, Feb 27, 2026
+- [Hegseth declares Anthropic a supply chain risk](https://www.cbsnews.com/news/hegseth-declares-anthropic-supply-chain-risk/) — CBS News, Feb 27, 2026
+- [Pentagon Designates Anthropic Supply Chain Risk](https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html) — The Hacker News, Feb 28, 2026
