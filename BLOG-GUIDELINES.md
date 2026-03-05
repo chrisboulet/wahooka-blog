@@ -155,7 +155,7 @@ tags: [tag1, tag2, tag3]
 
 | Sujet | Source veille | Priorité | Statut |
 |-------|--------------|----------|--------|
-| ClawJacked — sécurité des systèmes agentiques | #megaman 28 fév | 🔴 | À rédiger |
+| ClawJacked — sécurité des systèmes agentiques | #megaman 28 fév | 🔴 | ✅ Posts 015+016 (5 mars) |
 | L'inflexion de décembre 2025 (Karpathy + Anthropic spec→deploy) | #thematrix + #starfleet 28 fév | 🔴 | ✅ Posts 005+006 (28 fév) |
 | Pentagon vs Anthropic — résilience multi-modèle | #thematrix + #starfleet 28 fév | 🟡 | ✅ Posts 007+008 (1 mars) |
 | Narrow agents beat generalists (7-10 compétences par agent) | #starfleet + Riley Brown 2 mars | 🔴 | ✅ Posts 009+010 (2 mars) |
