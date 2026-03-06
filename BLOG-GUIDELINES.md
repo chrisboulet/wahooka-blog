@@ -166,3 +166,6 @@ tags: [tag1, tag2, tag3]
 | AgentRelay eval — pourquoi on garde notre orchestration | #thematrix 28 fév | 🔵 | À rédiger |
 | Qwen3.5-35B local — LLM open source sur GPU propre | #megaman 2 mars | 🔵 | À rédiger |
 | Agentic Engineering Patterns (Simon Willison) + MIT Sloan confiance/adoption | #thematrix + #starfleet 4 mars | 🟡 | ✅ Posts 013+014 (4 mars) |
+| Multi-model orchestration — pas d'allégeance de modèle (GPT-5.4 signal) | #starfleet 6 mars | 🔴 | ✅ Posts 017+018 (6 mars) |
+| Anthropic/Pentagon DOD refusal — trust differentiator pour clients réglementés | #starfleet 6 mars | 🟡 | À rédiger |
+| GTM Engineering Brand — "We run your marketing as agents" | #starfleet 5 mars | 🟡 | À rédiger |
