@@ -169,3 +169,4 @@ tags: [tag1, tag2, tag3]
 | Multi-model orchestration — pas d'allégeance de modèle (GPT-5.4 signal) | #starfleet 6 mars | 🔴 | ✅ Posts 017+018 (6 mars) |
 | Anthropic/Pentagon DOD refusal — trust differentiator pour clients réglementés | #starfleet 6 mars | 🟡 | À rédiger |
 | GTM Engineering Brand — "We run your marketing as agents" | #starfleet 5 mars | 🟡 | À rédiger |
+| Agents are table stakes — commoditisation multi-agents (Grok 4.20), expertise = moat | #starfleet 7 mars | 🔴 | ✅ Posts 019+020 (7 mars) |
