@@ -16,9 +16,38 @@ const lang = frontmatter.lang || 'en';
 const date = new Date(frontmatter.date).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', {
   year: 'numeric', month: 'short', day: 'numeric'
 });
+
+// Back link
+const backHref = lang === 'fr' ? '/fr/' : '/blog';
+const backLabel = lang === 'fr' ? '← retour aux articles' : '← back to posts';
+
+// Find mirror post (EN↔FR cross-link)
+const currentPath = Astro.url.pathname.replace(/\/$/, '');
+const numMatch = currentPath.match(/\/blog\/(\d+)-/);
+let mirrorUrl: string | null = null;
+let mirrorLang: string | null = null;
+if (numMatch) {
+  const num = parseInt(numMatch[1]);
+  const mirrorNum = num % 2 === 0 ? num - 1 : num + 1;
+  const mirrorPad = String(mirrorNum).padStart(3, '0');
+  const globResult = import.meta.glob('../pages/blog/**/*.{md,mdx}', { eager: true });
+  const allPosts = Object.values(globResult) as any[];
+  const mirror = allPosts.find(p => p.url?.includes(`/blog/${mirrorPad}-`));
+  if (mirror) {
+    mirrorUrl = mirror.url!;
+    mirrorLang = mirror.frontmatter.lang || 'en';
+  }
+}
 ---
 <BaseLayout title={frontmatter.title} description={frontmatter.description} lang={lang}>
-  <a href="/blog" class="back-link">← back to posts</a>
+  <div class="post-nav-top">
+    <a href={backHref} class="back-link">{backLabel}</a>
+    {mirrorUrl && (
+      <a href={mirrorUrl} class="lang-mirror-link">
+        {mirrorLang === 'fr' ? '🇫🇷 Lire en français' : '🇬🇧 Read in English'}
+      </a>
+    )}
+  </div>
   <article>
     <header class="post-header">
       <h1>{frontmatter.title}</h1>
@@ -27,5 +56,12 @@ const date = new Date(frontmatter.date).toLocaleDateString(lang === 'fr' ? 'fr-C
     <div class="prose">
       <slot />
     </div>
+    {mirrorUrl && (
+      <div class="post-mirror-bottom">
+        <a href={mirrorUrl}>
+          {mirrorLang === 'fr' ? '🇫🇷 Lire cet article en français' : '🇬🇧 Read this post in English'}
+        </a>
+      </div>
+    )}
   </article>
 </BaseLayout>

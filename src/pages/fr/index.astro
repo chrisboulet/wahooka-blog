@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const allPosts = await Astro.glob('../blog/**/*.{md,mdx}');
+const globResult = import.meta.glob('../blog/**/*.{md,mdx}', { eager: true });
+const allPosts = Object.values(globResult) as any[];
 const posts = allPosts
   .filter(p => p.frontmatter.lang === 'fr')
   .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());

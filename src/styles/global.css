@@ -413,17 +413,52 @@ a:hover { color: var(--text-primary); }
   font-family: var(--font-mono);
 }
 
-/* ─── BACK LINK ─── */
+/* ─── POST NAV TOP ─── */
+.post-nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
 .back-link {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  margin-bottom: 2rem;
   font-size: 0.8125rem;
   color: var(--text-tertiary);
   transition: color var(--transition);
 }
 .back-link:hover { color: var(--accent); }
+
+.lang-mirror-link {
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  transition: all var(--transition);
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+.lang-mirror-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ─── POST MIRROR BOTTOM ─── */
+.post-mirror-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.post-mirror-bottom a {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  transition: color var(--transition);
+}
+.post-mirror-bottom a:hover { color: var(--accent); }
 
 /* ─── FOOTER ─── */
 .site-footer {
