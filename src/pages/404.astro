@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="404 — Lost in the Dungeon" description="This page doesn't exist.">
+  <div class="error-page">
+    <div class="error-icon">🧌</div>
+    <h1 class="error-title">404</h1>
+    <p class="error-desc">You've wandered into a dead-end corridor.<br/>Even Wahooka can't find what you're looking for.</p>
+    <div class="error-actions">
+      <a href="/" class="error-link">← Back to the surface</a>
+      <a href="/blog" class="error-link">Browse posts</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-page {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  .error-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 12px rgba(212, 168, 67, 0.4));
+  }
+  .error-title {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+  .error-desc {
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .error-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .error-link {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    transition: all 150ms ease;
+    font-family: var(--font-mono);
+  }
+  .error-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-glow);
+  }
+
+  @media (max-width: 640px) {
+    .error-title { font-size: 3.5rem; }
+    .error-desc { font-size: 0.9375rem; }
+    .error-actions { flex-direction: column; align-items: center; gap: 0.75rem; }
+  }
+</style>

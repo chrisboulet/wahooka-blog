@@ -96,6 +96,13 @@ const schema = {
     <header class="post-header">
       <h1>{frontmatter.title}</h1>
       <div class="post-meta">{date} · {(frontmatter.lang || 'en').toUpperCase()} · {readLabel}</div>
+      {frontmatter.tags && frontmatter.tags.length > 0 && (
+        <div class="post-header-tags">
+          {frontmatter.tags.map(tag => (
+            <a href={`/tags/${tag}`} class="post-header-tag">{tag}</a>
+          ))}
+        </div>
+      )}
     </header>
     <div class="prose">
       <slot />
@@ -123,5 +130,19 @@ const schema = {
         </a>
       ) : <span />}
     </nav>
+
+    <div class="newsletter-box">
+      <p class="newsletter-title">{lang === 'fr' ? '📬 Recevoir les prochains billets' : '📬 Get notified of new posts'}</p>
+      <p class="newsletter-desc">{lang === 'fr' ? 'Pas de spam. Juste du contenu sur l\'IA, les agents, et le vrai monde.' : 'No spam. Just real-world AI, agents, and business.'}</p>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/wahooka"
+        method="post"
+        target="popupwindow"
+        class="newsletter-form"
+      >
+        <input type="email" name="email" placeholder={lang === 'fr' ? 'votre@courriel.com' : 'your@email.com'} required class="newsletter-input" />
+        <button type="submit" class="newsletter-btn">{lang === 'fr' ? 'S\'abonner' : 'Subscribe'}</button>
+      </form>
+    </div>
   </article>
 </BaseLayout>
