@@ -78,12 +78,20 @@ a:hover { color: var(--text-primary); }
   gap: 0.35rem;
 }
 .site-title:hover { color: var(--accent); }
-.site-title .fairy {
-  display: inline-block;
-  transition: transform var(--transition-slow);
+
+.nav-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent-dim);
+  object-fit: cover;
+  transition: all var(--transition-slow);
+  vertical-align: middle;
 }
-.site-title:hover .fairy {
-  transform: rotate(-15deg) scale(1.15);
+.site-title:hover .nav-avatar {
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(212, 168, 67, 0.4);
+  transform: scale(1.1);
 }
 
 .nav-links {
