@@ -10,16 +10,37 @@ const posts = allPosts
   <h1 class="page-title">all posts</h1>
   <p class="page-desc">Everything I've written. English & français québécois.</p>
 
-  <ul class="post-list">
+  <div class="lang-filter" id="lang-filter">
+    <button class="filter-btn active" data-lang="all">All</button>
+    <button class="filter-btn" data-lang="en">EN</button>
+    <button class="filter-btn" data-lang="fr">FR</button>
+  </div>
+
+  <ul class="post-list" id="post-list">
     {posts.map((post) => {
       const date = new Date(post.frontmatter.date).toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+      const lang = post.frontmatter.lang || 'en';
       return (
-        <li class="post-item">
+        <li class="post-item" data-lang={lang}>
           <span class="post-date">{date}</span>
           <a href={post.url} class="post-title-link">{post.frontmatter.title}</a>
-          <span class="post-lang-badge">{post.frontmatter.lang?.toUpperCase() || 'EN'}</span>
+          <span class="post-lang-badge">{lang.toUpperCase()}</span>
         </li>
       );
     })}
   </ul>
 </BaseLayout>
+
+<script>
+  document.getElementById('lang-filter')?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest('.filter-btn') as HTMLElement;
+    if (!btn) return;
+    const lang = btn.dataset.lang;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#post-list .post-item').forEach(item => {
+      const el = item as HTMLElement;
+      el.style.display = (lang === 'all' || el.dataset.lang === lang) ? '' : 'none';
+    });
+  });
+</script>

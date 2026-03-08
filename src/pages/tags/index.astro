@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const globResult = import.meta.glob('../blog/**/*.{md,mdx}', { eager: true });
+const allPosts = Object.values(globResult) as any[];
+
+// Build tag map: tag → count + posts
+const tagMap = new Map<string, { count: number; posts: any[] }>();
+for (const post of allPosts) {
+  const tags = post.frontmatter.tags || [];
+  for (const tag of tags) {
+    if (!tagMap.has(tag)) tagMap.set(tag, { count: 0, posts: [] });
+    const entry = tagMap.get(tag)!;
+    entry.count++;
+    entry.posts.push(post);
+  }
+}
+
+// Sort by count descending
+const sortedTags = [...tagMap.entries()].sort((a, b) => b[1].count - a[1].count);
+---
+<BaseLayout title="Tags" description="Browse posts by topic.">
+  <h1 class="page-title">tags</h1>
+  <p class="page-desc">Browse by topic. EN & FR posts share some tags.</p>
+
+  <div class="tag-cloud">
+    {sortedTags.map(([tag, { count }]) => (
+      <a href={`/tags/${tag}`} class="tag-cloud-item">
+        <span class="tag-name">{tag}</span>
+        <span class="tag-count">{count}</span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>
