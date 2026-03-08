@@ -47,8 +47,8 @@ const aboutLabel = lang === 'fr' ? 'à propos' : 'about';
       <a href={prefix + '/'} class="site-title"><img src="/images/wahooka-nav.webp" alt="" class="nav-avatar" width="24" height="24" /> wahooka</a>
       <ul class="nav-links">
         <li><a href={prefix ? prefix + '/' : '/blog'}>{postsLabel}</a></li>
-        <li><a href="/tags">tags</a></li>
-        <li><a href="/search">search</a></li>
+        <li><a href="/tags">{lang === 'fr' ? 'étiquettes' : 'tags'}</a></li>
+        <li><a href="/search">{lang === 'fr' ? 'recherche' : 'search'}</a></li>
         <li><a href={prefix + '/about'}>{aboutLabel}</a></li>
         <li><a href="/rss.xml" class="rss-link" title="RSS Feed">rss</a></li>
         <li><a href={lang === 'fr' ? '/' : '/fr/'} class="lang-switch">{lang === 'fr' ? 'EN' : 'FR'}</a></li>
