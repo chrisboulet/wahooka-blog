@@ -77,12 +77,18 @@ const aboutLabel = lang === 'fr' ? 'à propos' : 'about';
     <p class="footer-sub">Protocole 42 · 42 agents · 0 employés</p>
   </footer>
   <script is:inline>
-    document.querySelector('.hamburger').addEventListener('click', function() {
+    (function() {
+      var btn = document.querySelector('.hamburger');
       var nav = document.querySelector('.nav-links');
-      var open = nav.classList.toggle('nav-open');
-      this.classList.toggle('hamburger-open', open);
-      this.setAttribute('aria-expanded', open);
-    });
+      function toggle(force) {
+        var open = typeof force === 'boolean' ? force : !nav.classList.contains('nav-open');
+        nav.classList.toggle('nav-open', open);
+        btn.classList.toggle('hamburger-open', open);
+        btn.setAttribute('aria-expanded', open);
+      }
+      btn.addEventListener('click', function(e) { e.stopPropagation(); toggle(); });
+      nav.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', function() { toggle(false); }); });
+    })();
   </script>
 </body>
 </html>
